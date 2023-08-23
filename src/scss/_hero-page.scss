@@ -319,10 +319,10 @@
   // .hero-page__reviews
 
   &__reviews {
-    margin-bottom: 60px;
+    margin: 60px 0;
 
     @media (max-width: $breakpoint992) {
-      margin-bottom: 50px;
+      margin: 50px 0;
     }
 
   }

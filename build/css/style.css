@@ -297,7 +297,7 @@ body {
 }
 
 .hero-page__reviews {
-  margin-bottom: 60px;
+  margin: 60px 0;
 }
 
 .hero-page__reviews-title {
@@ -433,7 +433,7 @@ body {
   }
 
   .hero-page__reviews {
-    margin-bottom: 50px;
+    margin: 50px 0;
   }
 
   .hero-page__reviews-item {
