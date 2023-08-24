@@ -131,6 +131,13 @@
     }
   }
 
+  &__parking--reverse {
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
   // .hero-page__parking-info
 
   &__parking-info {
