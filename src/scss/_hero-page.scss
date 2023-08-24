@@ -121,7 +121,7 @@
     margin-bottom: 30px;
 
     @media (max-width: $breakpoint992) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       row-gap: 30px;
     }
 
@@ -191,6 +191,7 @@
     img {
       border-radius: 15px;
       max-width: 100%;
+      width: 100%;
     }
   }
 
@@ -443,4 +444,10 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.hero-page__info-wrapper--top {
+  @media (max-width: $breakpoint768) {
+    padding-top: 30px;
+  }
 }

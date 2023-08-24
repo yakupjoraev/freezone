@@ -216,6 +216,7 @@ body {
 .hero-page__parking-picture img {
   border-radius: 15px;
   max-width: 100%;
+  width: 100%;
 }
 
 .hero-page__checks {
@@ -406,9 +407,9 @@ body {
 
   .hero-page__parking {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     row-gap: 30px;
   }
 
@@ -523,5 +524,9 @@ body {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     padding: 0;
+  }
+
+  .hero-page__info-wrapper--top {
+    padding-top: 30px;
   }
 }
