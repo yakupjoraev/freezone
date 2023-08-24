@@ -18,6 +18,8 @@
     @media (max-width: $breakpoint992) {
       padding: 40px 20px 100px;
       min-height: 500px;
+      margin-left: -15px;
+      margin-right: -15px;
     }
 
 
@@ -141,7 +143,7 @@
   // .hero-page__parking-info
 
   &__parking-info {
-    flex: 0 1 470px;
+    flex: 0 1 458px;
 
     @media (max-width: $breakpoint992) {
       flex: 0 1 auto;
@@ -160,6 +162,10 @@
 
     @media (max-width: $breakpoint992) {
       font-size: 32px;
+
+      br {
+        display: none;
+      }
     }
 
     @media (max-width: $breakpoint768) {
@@ -170,19 +176,22 @@
   // .hero-page__parking-descr
 
   &__parking-descr {
-    padding-left: 16px;
     font-family: 'SF Compact Display', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
     color: #8B8B8B;
 
-    @media (max-width: $breakpoint992) {
-      padding-left: 0;
+    span {
+      display: block;
     }
 
     @media (max-width: $breakpoint768) {
       font-size: 14px;
+
+      span {
+        display: inline;
+      }
     }
   }
 
@@ -345,6 +354,10 @@
     line-height: 43px;
     font-size: 32px;
     color: #202020;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
   }
 
   // .hero-page__reviews-list
@@ -365,7 +378,7 @@
 
   &__reviews-item {
 
-    flex: 0 1 31.33333%;
+    flex: 0 1 31.83333%;
     display: grid;
     justify-items: center;
     padding: 50px 0;
@@ -432,6 +445,10 @@
     line-height: 43px;
     font-size: 32px;
     color: #202020;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
   }
 
   // .hero-page__block-descr
