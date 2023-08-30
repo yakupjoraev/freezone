@@ -220,6 +220,8 @@ body {
   border-radius: 15px;
   max-width: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-page__checks {
@@ -344,6 +346,8 @@ body {
   height: 125px;
   margin-bottom: 30px;
   border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-page__reviews-name {

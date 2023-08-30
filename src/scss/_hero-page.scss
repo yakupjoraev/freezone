@@ -208,6 +208,7 @@
       border-radius: 15px;
       max-width: 100%;
       width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -389,6 +390,7 @@
       height: 125px;
       margin-bottom: 30px;
       border-radius: 100%;
+      object-fit: cover;
     }
 
     @media (max-width: $breakpoint992) {
