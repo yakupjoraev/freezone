@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "SF Compact Display";
   src: url("../fonts/SFCompactDisplay-Medium.woff");
@@ -397,6 +399,194 @@ body {
   padding: 0 15px;
 }
 
+/* стили для слайдера */
+
+.hero-slider__container {
+  position: relative;
+  max-width: 1145px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 15px;
+}
+
+.hero-slider__title {
+  margin-bottom: 32px;
+  font-family: "Brutal Type", sans-serif;
+  color: #202020;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.hero-slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero-slider__slide:hover .hero-slider__slide-link {
+  text-decoration: underline;
+}
+
+.hero-slider__slide-pic {
+  height: 205px;
+}
+
+.hero-slider__slide-pic img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-slider__slide-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  padding: 20px;
+}
+
+.hero-slider__slide-label {
+  font-family: "Brutal Type", sans-serif;
+  color: #202020;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+}
+
+.hero-slider__slide-descr {
+  font-family: "SF Compact Display", sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 16px;
+  color: #8B8B8B;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 3;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.hero-slider__slide-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: auto;
+  font-family: "SF Compact Display", sans-serif;
+  color: #FE4505;
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  text-align: right;
+}
+
+.hero-slider__arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(5, 12, 38, 0.4);
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.hero-slider__arrow svg path {
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.hero-slider__arrow:hover svg path {
+  stroke: #FF4505;
+}
+
+.hero-slider__arrow--prev {
+  left: 0;
+  margin-left: -5px;
+}
+
+.hero-slider__arrow--next {
+  right: 0;
+  margin-right: -5px;
+}
+
+.hero-slider__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin-top: 32px;
+}
+
+.hero-slider__pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid #050038;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.hero-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #050038;
+}
+
+@media (max-width: 1200px) {
+  .hero-slider__container {
+    padding: 0 20px;
+  }
+
+  .hero-slider__arrow--prev {
+    margin: 0;
+  }
+
+  .hero-slider__arrow--next {
+    margin: 0;
+  }
+}
+
 @media (max-width: 991.98px) {
   .hero-page__banner {
     padding: 40px 20px 100px;
@@ -462,6 +652,19 @@ body {
 
   .hero-page__block {
     margin-bottom: 50px;
+  }
+
+  .hero-slider__slide-label {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero-slider__slide-descr {
+    font-size: 14px;
+  }
+
+  .hero-slider__slide-link {
+    font-size: 14px;
   }
 }
 
